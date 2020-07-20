@@ -3,4 +3,7 @@
     <string name="main_title">MUSAB ACADEMY</string>
     <string name="lesson_text">CASHARADA</string>
     <string name="signal_text">SIGNALS</string>
+    <string name="basics_txt">FOREX BASICS</string>
+    <string name="intermediaate_txt">FOREX INTERMEDIATE</string>
+    <string name="advance_txt">FOREX ADVANCE</string>
 </resources>
