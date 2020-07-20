@@ -1,16 +1,18 @@
-package com.salajim.musab.musabacademy;
+package com.salajim.musab.musabacademy.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 
-public class LessonsActivity extends AppCompatActivity {
+import com.salajim.musab.musabacademy.R;
+
+public class BasicsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lessons);
+        setContentView(R.layout.activity_basics);
 
         // Setting up the custom toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -18,6 +20,5 @@ public class LessonsActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-
     }
 }
