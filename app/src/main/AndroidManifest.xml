@@ -14,7 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".basicLessons.LessonOne"></activity>
+        <activity android:name=".basicLessons.BasicsDetail"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.salajim.musab.musabacademy.ui.BasicsActivity" />
+        </activity>
         <activity
             android:name=".ui.BasicsActivity"
             android:theme="@style/AppTheme.NoActionBar">

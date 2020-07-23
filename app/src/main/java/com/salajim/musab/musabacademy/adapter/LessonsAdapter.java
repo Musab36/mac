@@ -8,23 +8,22 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.salajim.musab.musabacademy.R;
-import com.salajim.musab.musabacademy.basicLessons.LessonOne;
-import com.salajim.musab.musabacademy.model.Lessons;
+import com.salajim.musab.musabacademy.basicLessons.BasicsDetail;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class LessonsAdapter extends RecyclerView.Adapter<LessonsAdapter.MyViewHolder> {
     Context mContext;
     List<String> titlesArray;
+    List<String> videosArray;
 
-    public LessonsAdapter(Context context, List<String> titles) {
+    public LessonsAdapter(Context context, List<String> titles, List<String> videosArray) {
         this.mContext = context;
         this.titlesArray = titles;
+        this.videosArray = videosArray;
     }
 
     @NonNull
@@ -53,8 +52,9 @@ public class LessonsAdapter extends RecyclerView.Adapter<LessonsAdapter.MyViewHo
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(mContext, LessonOne.class);
+                    Intent intent = new Intent(mContext, BasicsDetail.class);
                     intent.putExtra("title", titlesArray.get(getAdapterPosition()));
+                    intent.putExtra("video", videosArray.get(getAdapterPosition()));
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     mContext.startActivity(intent);
                 }
