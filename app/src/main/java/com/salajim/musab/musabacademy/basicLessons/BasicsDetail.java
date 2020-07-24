@@ -3,10 +3,14 @@ package com.salajim.musab.musabacademy.basicLessons;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.MediaController;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.VideoView;
 
@@ -17,6 +21,7 @@ public class BasicsDetail extends AppCompatActivity {
     String vid = "";
     VideoView videoV;
     TextView bartext;
+    ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +43,24 @@ public class BasicsDetail extends AppCompatActivity {
         bartext = findViewById(R.id.barText);
         bartext.setText(title);
 
+        progressBar = findViewById(R.id.progressbar);
+        progressBar.setVisibility(View.VISIBLE);
+
+        loadVideo();
+    }
+
+    private void loadVideo() {
         videoV.setVideoURI(Uri.parse(vid));
 
         MediaController mediaController = new MediaController(this);
         videoV.setMediaController(mediaController);
         videoV.start();
+
+        videoV.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                progressBar.setVisibility(View.INVISIBLE);
+            }
+        });
     }
 }
