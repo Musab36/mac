@@ -29,7 +29,7 @@ public class BasicsAdapter extends RecyclerView.Adapter<BasicsAdapter.MyViewHold
     @NonNull
     @Override
     public BasicsAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new MyViewHolder(LayoutInflater.from(mContext).inflate(R.layout.lessons, parent, false));
+        return new MyViewHolder(LayoutInflater.from(mContext).inflate(R.layout.basic_lessons_view, parent, false));
     }
 
     @Override

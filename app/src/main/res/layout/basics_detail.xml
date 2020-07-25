@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/barText"
             android:text="CASHARKA 1"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="60dp"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"/>

@@ -18,9 +18,14 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.salajim.musab.musabacademy.ui.IntermediateActivity" />
+        </activity>
+        <activity android:name=".ui.IntermediateActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.salajim.musab.musabacademy.ui.LessonsActivity" />
         </activity>
-        <activity android:name=".ui.IntermediateActivity" />
         <activity
             android:name=".basicLessons.BasicsDetail"
             android:theme="@style/AppTheme.NoActionBar">
