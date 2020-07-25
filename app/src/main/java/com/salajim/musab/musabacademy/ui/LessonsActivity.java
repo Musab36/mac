@@ -12,6 +12,8 @@ import com.salajim.musab.musabacademy.R;
 
 public class LessonsActivity extends AppCompatActivity implements View.OnClickListener{
     CardView basicsCard;
+    CardView intermediateCard;
+    CardView advanceCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +27,12 @@ public class LessonsActivity extends AppCompatActivity implements View.OnClickLi
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        basicsCard = (CardView) findViewById(R.id.card1);
+        basicsCard = findViewById(R.id.card1);
+        intermediateCard = findViewById(R.id.card2);
+        advanceCard = findViewById(R.id.card3);
 
         basicsCard.setOnClickListener(this);
+        intermediateCard.setOnClickListener(this);
 
     }
 
@@ -37,5 +42,11 @@ public class LessonsActivity extends AppCompatActivity implements View.OnClickLi
             Intent intent = new Intent(this, BasicsActivity.class);
             startActivity(intent);
         }
+
+        if (v == intermediateCard) {
+            Intent intent = new Intent(this, IntermediateActivity.class);
+            startActivity(intent);
+        }
+
     }
 }

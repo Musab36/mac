@@ -15,12 +15,12 @@ import com.salajim.musab.musabacademy.basicLessons.BasicsDetail;
 
 import java.util.List;
 
-public class LessonsAdapter extends RecyclerView.Adapter<LessonsAdapter.MyViewHolder> {
+public class BasicsAdapter extends RecyclerView.Adapter<BasicsAdapter.MyViewHolder> {
     Context mContext;
     List<String> titlesArray;
     List<String> videosArray;
 
-    public LessonsAdapter(Context context, List<String> titles, List<String> videosArray) {
+    public BasicsAdapter(Context context, List<String> titles, List<String> videosArray) {
         this.mContext = context;
         this.titlesArray = titles;
         this.videosArray = videosArray;
@@ -28,12 +28,12 @@ public class LessonsAdapter extends RecyclerView.Adapter<LessonsAdapter.MyViewHo
 
     @NonNull
     @Override
-    public LessonsAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public BasicsAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new MyViewHolder(LayoutInflater.from(mContext).inflate(R.layout.lessons, parent, false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull LessonsAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull BasicsAdapter.MyViewHolder holder, int position) {
         holder.titlesT.setText(titlesArray.get(position));
     }
 

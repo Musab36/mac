@@ -2,26 +2,22 @@ package com.salajim.musab.musabacademy.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.os.Bundle;
 
 import com.salajim.musab.musabacademy.R;
-import com.salajim.musab.musabacademy.adapter.LessonsAdapter;
-import com.salajim.musab.musabacademy.model.Lessons;
+import com.salajim.musab.musabacademy.adapter.BasicsAdapter;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class BasicsActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     ArrayList<String> titlesArray;
     ArrayList<String> videosArray;
 
-    LessonsAdapter adapter;
+    BasicsAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +39,7 @@ public class BasicsActivity extends AppCompatActivity {
 
     private void setAdapter() {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new LessonsAdapter(getApplicationContext(), titlesArray, videosArray);
+        adapter = new BasicsAdapter(getApplicationContext(), titlesArray, videosArray);
         recyclerView.setAdapter(adapter);
     }
 
