@@ -14,24 +14,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".interm.IntermediateDetail"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.salajim.musab.musabacademy.ui.IntermediateActivity" />
+        <activity
+            android:name=".advanceLessons.AdvanceDetail"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_advance_detail"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".ui.AdvanceActivity">
         </activity>
-        <activity android:name=".ui.IntermediateActivity"
+        <activity android:name=".ui.AdvanceActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.salajim.musab.musabacademy.ui.LessonsActivity" />
         </activity>
         <activity
-            android:name=".basicLessons.BasicsDetail"
+            android:name=".basicLessons.BasicDetail"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_basic_detail"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.salajim.musab.musabacademy.ui.BasicsActivity" />
+        </activity>
+        <activity
+            android:name=".interm.IntermDetail"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_interm_detail"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.salajim.musab.musabacademy.ui.IntermediateActivity" />
+        </activity>
+        <activity
+            android:name=".ui.IntermediateActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.salajim.musab.musabacademy.ui.LessonsActivity" />
         </activity>
         <activity
             android:name=".ui.BasicsActivity"

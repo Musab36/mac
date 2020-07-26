@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.salajim.musab.musabacademy.R;
-import com.salajim.musab.musabacademy.interm.IntermediateDetail;
+import com.salajim.musab.musabacademy.interm.IntermDetail;
 
 import java.util.List;
 
@@ -52,7 +52,7 @@ public class IntermediateAdapter extends RecyclerView.Adapter<IntermediateAdapte
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(mContext, IntermediateDetail.class);
+                    Intent intent = new Intent(mContext, IntermDetail.class);
                     intent.putExtra("title", titlesArray.get(getAdapterPosition()));
                     intent.putExtra("video", videosArray.get(getAdapterPosition()));
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

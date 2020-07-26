@@ -1,5 +1,8 @@
-package com.salajim.musab.musabacademy.interm;
+package com.salajim.musab.musabacademy.advanceLessons;
 
+import android.annotation.SuppressLint;
+
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -7,6 +10,8 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.MediaController;
 import android.widget.ProgressBar;
@@ -15,7 +20,8 @@ import android.widget.VideoView;
 
 import com.salajim.musab.musabacademy.R;
 
-public class IntermediateDetail extends AppCompatActivity {
+
+public class AdvanceDetail extends AppCompatActivity {
     String title = "";
     String vid = "";
     VideoView videoV;
@@ -25,7 +31,7 @@ public class IntermediateDetail extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intermediate_detail);
+        setContentView(R.layout.activity_advance_detail);
 
         // Setting up the custom toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -46,6 +52,7 @@ public class IntermediateDetail extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);
 
         loadVideo();
+
     }
 
     private void loadVideo() {
@@ -62,4 +69,7 @@ public class IntermediateDetail extends AppCompatActivity {
             }
         });
     }
+
+
+
 }

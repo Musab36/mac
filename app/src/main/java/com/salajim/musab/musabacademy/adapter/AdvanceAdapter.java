@@ -11,16 +11,17 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.salajim.musab.musabacademy.R;
+import com.salajim.musab.musabacademy.advanceLessons.AdvanceDetail;
 import com.salajim.musab.musabacademy.basicLessons.BasicDetail;
 
 import java.util.List;
 
-public class BasicsAdapter extends RecyclerView.Adapter<BasicsAdapter.MyViewHolder> {
+public class AdvanceAdapter extends RecyclerView.Adapter<AdvanceAdapter.MyViewHolder> {
     Context mContext;
     List<String> titlesArray;
     List<String> videosArray;
 
-    public BasicsAdapter(Context context, List<String> titles, List<String> videosArray) {
+    public AdvanceAdapter(Context context, List<String> titles, List<String> videosArray) {
         this.mContext = context;
         this.titlesArray = titles;
         this.videosArray = videosArray;
@@ -28,12 +29,12 @@ public class BasicsAdapter extends RecyclerView.Adapter<BasicsAdapter.MyViewHold
 
     @NonNull
     @Override
-    public BasicsAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new MyViewHolder(LayoutInflater.from(mContext).inflate(R.layout.basic_lessons_view, parent, false));
+    public AdvanceAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new AdvanceAdapter.MyViewHolder(LayoutInflater.from(mContext).inflate(R.layout.advance_lessons_view, parent, false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull BasicsAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull AdvanceAdapter.MyViewHolder holder, int position) {
         holder.titlesT.setText(titlesArray.get(position));
     }
 
@@ -52,7 +53,7 @@ public class BasicsAdapter extends RecyclerView.Adapter<BasicsAdapter.MyViewHold
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(mContext, BasicDetail.class);
+                    Intent intent = new Intent(mContext, AdvanceDetail.class);
                     intent.putExtra("title", titlesArray.get(getAdapterPosition()));
                     intent.putExtra("video", videosArray.get(getAdapterPosition()));
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

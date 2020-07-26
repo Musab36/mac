@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="yellow">#FFFF00</color>
-    <color name="black_bg"> #000000</color>
+    <color name="black_bg">#000000</color>
     <color name="gray">#585858</color>
     <color name="dark_yellow">#FFBF00</color>
     <color name="white">#FFFFFF</color>
@@ -13,4 +13,6 @@
     <color name="red_purple">#FF0080</color>
     <color name="purple">#4B088A</color>
     <color name="green">#00FF00</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>

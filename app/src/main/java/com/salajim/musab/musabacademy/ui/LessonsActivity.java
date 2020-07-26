@@ -33,6 +33,7 @@ public class LessonsActivity extends AppCompatActivity implements View.OnClickLi
 
         basicsCard.setOnClickListener(this);
         intermediateCard.setOnClickListener(this);
+        advanceCard.setOnClickListener(this);
 
     }
 
@@ -45,6 +46,11 @@ public class LessonsActivity extends AppCompatActivity implements View.OnClickLi
 
         if (v == intermediateCard) {
             Intent intent = new Intent(this, IntermediateActivity.class);
+            startActivity(intent);
+        }
+
+        if (v == advanceCard) {
+            Intent intent = new Intent(this, AdvanceActivity.class);
             startActivity(intent);
         }
 

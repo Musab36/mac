@@ -6,4 +6,9 @@
     <string name="basics_txt">FOREX BASICS</string>
     <string name="intermediaate_txt">FOREX INTERMEDIATE</string>
     <string name="advance_txt">FOREX ADVANCE</string>
+    <string name="title_activity_interm_detail">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_basic_detail">FullscreenActivity</string>
+    <string name="title_activity_advance_detail">FullscreenActivity</string>
 </resources>
