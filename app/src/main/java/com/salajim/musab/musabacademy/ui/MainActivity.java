@@ -18,16 +18,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        lessonsCard = (CardView) findViewById(R.id.card1);
-        signalsCard = (CardView) findViewById(R.id.card2);
+        lessonsCard = findViewById(R.id.card1);
+        signalsCard = findViewById(R.id.card2);
 
         lessonsCard.setOnClickListener(this);
+        signalsCard.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         if (v == lessonsCard) {
             Intent intent = new Intent(this, LessonsActivity.class);
+            startActivity(intent);
+        }
+
+        if (v == signalsCard) {
+            Intent intent = new Intent(this, SignalsActivity.class);
             startActivity(intent);
         }
     }

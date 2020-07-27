@@ -6,6 +6,17 @@
     <string name="basics_txt">FOREX BASICS</string>
     <string name="intermediaate_txt">FOREX INTERMEDIATE</string>
     <string name="advance_txt">FOREX ADVANCE</string>
+    <string name="signals_title">SIGNALS</string>
+    <string name="admin">Admin Page</string>
+    <string name="username">Enter username</string>
+    <string name="password">Enter password</string>
+    <string name="submit_btn">Login</string>
+    <string name="pairs">Enter pair</string>
+    <string name="entry">Enter entry price</string>
+    <string name="profit">Enter take profit</string>
+    <string name="stop_loss">Enter Stop loss</string>
+    <string name="submit_signal">Submit</string>
+    <string name="signal">Enter signal</string>
     <string name="title_activity_interm_detail">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
