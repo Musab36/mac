@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/black_bg"
+    android:background="@color/gray"
     tools:context=".basicLessons.BasicDetail">
 
     <RelativeLayout
@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/toolbar"
-            android:background="@color/dark_cyan"
+            android:background="@color/black_bg"
             app:theme="@style/ToolbarTheme">
 
             <TextView
@@ -24,7 +24,7 @@
                 android:id="@+id/barText"
                 android:text="CASHARKA 1"
                 android:layout_marginLeft="60dp"
-                android:textColor="@color/white"
+                android:textColor="@color/dark_cyan"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 

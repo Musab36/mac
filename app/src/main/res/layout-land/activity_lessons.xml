@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.LessonsActivity"
-    android:background="@color/black_bg">
+    android:background="@color/gray">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/toolbar"
-        android:background="@color/orange"
+        android:background="@color/black_bg"
         app:theme="@style/ToolbarTheme">
 
         <TextView
@@ -20,7 +20,7 @@
             android:id="@+id/barText"
             android:text="@string/lesson_text"
             android:layout_marginLeft="200dp"
-            android:textColor="@color/white"
+            android:textColor="@color/orange"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
@@ -35,7 +35,7 @@
         card_view:cardCornerRadius="10dp"
         card_view:cardElevation="5dp"
         card_view:cardUseCompatPadding="true"
-        card_view:cardBackgroundColor="@color/orange"
+        card_view:cardBackgroundColor="@color/black_bg"
         android:layout_below="@+id/toolbar">
 
         <TextView
@@ -44,7 +44,7 @@
             android:id="@+id/basicsTxt"
             android:text="@string/basics_txt"
             android:textSize="25sp"
-            android:textColor="@color/white"
+            android:textColor="@color/orange"
             android:textStyle="bold"
             android:layout_gravity="center" />
 
@@ -58,7 +58,7 @@
         card_view:cardCornerRadius="10dp"
         card_view:cardElevation="5dp"
         card_view:cardUseCompatPadding="true"
-        card_view:cardBackgroundColor="@color/orange"
+        card_view:cardBackgroundColor="@color/black_bg"
         android:layout_below="@+id/card1">
 
         <TextView
@@ -67,7 +67,7 @@
             android:id="@+id/intermediateTxt"
             android:text="@string/intermediaate_txt"
             android:textSize="25sp"
-            android:textColor="@color/white"
+            android:textColor="@color/orange"
             android:textStyle="bold"
             android:layout_gravity="center" />
 
@@ -81,7 +81,7 @@
         card_view:cardCornerRadius="10dp"
         card_view:cardElevation="5dp"
         card_view:cardUseCompatPadding="true"
-        card_view:cardBackgroundColor="@color/orange"
+        card_view:cardBackgroundColor="@color/black_bg"
         android:layout_below="@+id/card2">
 
         <TextView
@@ -90,7 +90,7 @@
             android:id="@+id/advanceTxt"
             android:text="@string/advance_txt"
             android:textSize="25sp"
-            android:textColor="@color/white"
+            android:textColor="@color/orange"
             android:textStyle="bold"
             android:layout_gravity="center" />
 

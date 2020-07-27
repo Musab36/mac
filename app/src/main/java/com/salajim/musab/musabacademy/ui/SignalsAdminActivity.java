@@ -47,6 +47,6 @@ public class SignalsAdminActivity extends AppCompatActivity implements View.OnCl
     }
 
     private void getAdmin() {
-        
+
     }
 }

@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".ui.IntermediateActivity"
-    android:background="@color/black_bg">
+    android:background="@color/gray">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/toolbar"
-        android:background="@color/red_purple"
+        android:background="@color/black_bg"
         app:theme="@style/ToolbarTheme">
 
         <TextView
@@ -20,7 +20,7 @@
             android:id="@+id/barText"
             android:text="CASHARKA 1"
             android:layout_marginLeft="60dp"
-            android:textColor="@color/white"
+            android:textColor="@color/red_purple"
             android:textSize="20sp"
             android:textStyle="bold"/>
 

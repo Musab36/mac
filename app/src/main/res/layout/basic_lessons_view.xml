@@ -2,7 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/black_bg">
+    android:background="@color/gray">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         card_view:cardCornerRadius="10dp"
         card_view:cardElevation="5dp"
         card_view:cardUseCompatPadding="true"
-        card_view:cardBackgroundColor="@color/dark_cyan"
+        card_view:cardBackgroundColor="@color/black_bg"
         android:layout_below="@+id/toolbar">
 
         <TextView
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/titleTxt"
             android:textSize="25sp"
-            android:textColor="@color/white"
+            android:textColor="@color/dark_cyan"
             android:textStyle="bold"
             android:layout_gravity="center" />
 
