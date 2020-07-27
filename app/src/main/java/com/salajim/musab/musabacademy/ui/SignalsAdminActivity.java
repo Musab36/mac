@@ -47,13 +47,6 @@ public class SignalsAdminActivity extends AppCompatActivity implements View.OnCl
     }
 
     private void getAdmin() {
-        String user = username.getText().toString();
-        int pass = Integer.parseInt(password.getText().toString());
-        if (user != "Musab" && pass != 5474213) {
-            Toast.makeText(this, "Incorrect password or usernam", Toast.LENGTH_SHORT).show();
-        } else {
-            Intent intent = new Intent(this, AddSignalsActivity.class);
-            startActivity(intent);
-        }
+        
     }
 }
