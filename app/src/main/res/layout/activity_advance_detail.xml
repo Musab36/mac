@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
+    android:background="@color/black_bg"
     tools:context=".advanceLessons.AdvanceDetail">
 
 
@@ -25,7 +25,7 @@
                 android:id="@+id/barText"
                 android:text="CASHARKA 1"
                 android:layout_marginLeft="60dp"
-                android:textColor="@color/purple"
+                android:textColor="@color/sky_blue"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 

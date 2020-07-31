@@ -20,7 +20,7 @@
             android:id="@+id/barText"
             android:text="CASHARKA 1"
             android:layout_marginLeft="60dp"
-            android:textColor="@color/purple"
+            android:textColor="@color/sky_blue"
             android:textSize="20sp"
             android:textStyle="bold"/>
 

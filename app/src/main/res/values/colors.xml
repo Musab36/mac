@@ -15,6 +15,5 @@
     <color name="green">#00FF00</color>
     <color name="light_purple">#9C27B0</color>
     <color name="red">#FB0303</color>
-
-    <color name="black_overlay">#66000000</color>
+    <color name="sky_blue">#2ECCFA</color>
 </resources>

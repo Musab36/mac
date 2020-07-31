@@ -12,6 +12,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -68,12 +69,18 @@ public class SignalsActivity extends AppCompatActivity {
                     signalsList.add(ds.getValue(Signals.class));
                 }
 
-                mAdapter = new SignalsAdapter(getApplicationContext(), signalsList);
-                recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-                recyclerView.setHasFixedSize(true);
-                recyclerView.setAdapter(mAdapter);
+                if (signalsList.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "No Signals", Toast.LENGTH_SHORT).show();
+                    progressBar.setVisibility(View.INVISIBLE);
+                } else {
+                    mAdapter = new SignalsAdapter(getApplicationContext(), signalsList);
+                    recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+                    recyclerView.setHasFixedSize(true);
+                    recyclerView.setAdapter(mAdapter);
 
-                progressBar.setVisibility(View.INVISIBLE);
+                    progressBar.setVisibility(View.INVISIBLE);
+                }
+
             }
 
             @Override
